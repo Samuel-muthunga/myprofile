@@ -1,12 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
+
 <body>
-    <h1>Welcome to My Profile Website!</h1>
-    <p>This is my personal site hosted on GitHub Pages.</p>
+    <nav id="desktop-nav">
+        <div class="logo">Samuel Muthunga</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Samuel Muthunga</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\sam1.png" alt="Samuel Muthunga profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Samuel Muthunga</h1>
+            <p class="section__text__p2">Graphic Designer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('https://drive.google.com/file/d/1GomwUUDHGTlxCSN9AnMc4KlkHv-vw7n6/view?usp=drive_link')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='tel:071-875-5583'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="C:\Users\user\Desktop\html-css-js portfolio\img\fb.png" alt="My Facebook profile" class="icon"
+                    onclick="location.href='https://www.facebook.com/samuel.muthunga.1?_rdc=1&_rdr#'" />
+                <img src="C:\Users\user\Desktop\html-css-js portfolio\img\inst.png" alt="My Instagram profile"
+                    class="icon" onclick="location.href='https://www.instagram.com/saliarts2024/'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="C:\Users\user\Desktop\html-css-js portfolio\img\sam2.png" alt="Profile picture"
+                    class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\ex.svg" alt="Experience icon"
+                            class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Graphic Designer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\ed.png" alt="Education icon"
+                            class="icon" />
+                        <h3>Education</h3>
+                        <p>Diploma in Graphic Designing</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am a creative and detail-oriented graphic designer
+                        with a strong eye for aesthetics and branding.
+                        Skilled in delivering visually compelling designs
+                        across digital and print platforms, I bring innovative
+                        ideas to enhance brand identity and engagement.
+                        Proficient in industry-standard design software,
+                        I excel in transforming concepts into impactful visuals.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\do.svg" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Graphic Designer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\adp.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Adobe Photoshop</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\adi.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Adobe Illustrator</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\canva.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Canva</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\cc.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>CapCut</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\pp.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Adobe Premiere Pro</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\ae.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Adobe After Effects</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Analytics Beginner</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\py.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\sql.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\bi.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="C:\Users\user\Desktop\html-css-js portfolio\img\Tab.png" alt="Experience icon"
+                                class="icon" />
+                            <div>
+                                <h3>Tableau</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\up.svg" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='tel:071-875-5583'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\mug.png" alt="Project 1"
+                            class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Mug Printing</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://drive.google.com/drive/folders/1MjAh93l1kO_RjWJlZMrPM-YJvYzNW0cN?usp=drive_link'">
+                            Google Drive
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://youtu.be/ce9IzswCiDg?si=2FCHYxwwV6aD75kQ'">
+                            YouTube
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\birth.png" alt="Project 2"
+                            class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Poster Design</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://drive.google.com/drive/folders/1klyCxKpQDfiMg1D855w4RjbGbMS5szAl?usp=drive_link'">
+                            Google Drive
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://youtu.be/Rm9F7ure4yw?si=ue6bcsElodckqTqu'">
+                            YouTube
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\ele.png" alt="Project 3"
+                            class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Photo Manipulation AND Cartoon Illustrations</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://drive.google.com/drive/folders/1ojzvwoZH1ZHSCCYjwxtX9tq2FD64hYwu?usp=drive_link'">
+                            Google Drive
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                            onclick="location.href='https://youtu.be/GOOL8CdlWZU?si=aGs-0iSgHlhNbNgz'">
+                            YouTube
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="C:\Users\user\Desktop\html-css-js portfolio\img\up.svg" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='tel:071-875-5583'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="C:\Users\user\Desktop\html-css-js portfolio\img\email.svg" alt="Email icon"
+                    class="icon contact-icon email-icon" />
+                <p><a href="mailto:muthungasamuel8@gmail.com">Email Me</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="C:\Users\user\Desktop\html-css-js portfolio\img\wht.png" alt="Whatsapp icon"
+                    class="icon contact-icon" />
+                <p><a href="https://wa.me/<0718755583>">Whatsapp Me</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Samuel Muthunga. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
